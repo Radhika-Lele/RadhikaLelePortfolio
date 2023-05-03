@@ -1,12 +1,17 @@
 #about{
-    padding: 80px 0;
+    // padding: 80px 0;
     color: Black;
+}
+
+.wrapperOne{
+    padding-top: 70px;
 }
 
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap ;
+    
 }
 
 .aboutColOne{
@@ -21,23 +26,29 @@
 
 .aboutColTwo{
     flex-basis: 60%;
+
+    p{
+        font-size: 1.5rem;
+    }
 }
 
 .subTitle{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
-    
+    font-weight: bold;
+    padding:0 0 15% 0;
+    font-family: 'Overpass', sans-serif;
 }
 
 .button{
     display:block;
     background: black ;
     color:white;
-    margin: 50px auto;
+    margin: 15% auto auto auto;
     border: 1px solid #ff004f;
     padding: 14px 50px;
     width: fit-content;
-    border-radius: 6px;
+    border-radius: 10px;
     text-decoration: none;
     transition:  0.5s;
 }

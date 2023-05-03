@@ -1,5 +1,5 @@
 #portfolio{
-    padding: 50px 0;
+    padding: 70px 0 0 0;
 }
 
 .workList{
@@ -87,7 +87,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 30px 40px;
+    // padding: 30px 40px;
     text-align: center;
     transition: height 0.8s;
     
@@ -96,6 +96,7 @@
 .layer h4{
     font-weight: 800;
     margin-bottom: 0px;
+    padding: 15px;
 }
 
 .work:hover img{
