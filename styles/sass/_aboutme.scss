@@ -1,0 +1,64 @@
+#about{
+    // padding: 80px 0;
+    color: Black;
+}
+
+.wrapperOne{
+    padding-top: 70px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    
+}
+
+.aboutColOne{
+    flex-basis: 35%;
+
+    img{
+        width: 100%;
+        border-radius: 50%;
+        height:auto;
+    }
+}
+
+.aboutColTwo{
+    flex-basis: 60%;
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.subTitle{
+    font-size: 50px;
+    font-weight: 500;
+    font-weight: bold;
+    padding:0 0 15% 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.button{
+    display:block;
+    background: black ;
+    color:white;
+    margin: 15% auto auto auto;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+    transition:  0.5s;
+}
+.button:hover{
+    background: blue ;
+}
+
+form button{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}

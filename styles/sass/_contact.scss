@@ -1,0 +1,79 @@
+.contactLeft{
+    flex-basis: 35%;
+
+    p{
+         margin-top: 55px;
+    }
+}
+
+.contactRight{
+    flex-basis: 60%;
+}
+
+.contactLeft p i{
+     color:purple;
+     font-size :25px;
+     margin-right: 15px;
+}
+
+.socialIcons{
+      margin-top: 30px;
+
+      a{
+        text-decoration: none;
+        font-size : 30px;
+        margin-right: 70px;
+        color: purple;
+        display: inline-block;
+        transition: transform 0.5s ;
+      }
+}
+
+.socialIcons a:hover{
+    color: blue;
+    transform: translateY(-5px);
+    cursor: pointer;
+
+}
+
+.contactRight form{
+    width: 100%;
+    margin-top: 37px;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border : 0;
+    outline : none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.returnTop a{
+    text-decoration: none;
+    padding: 10px 20px;
+    // text-shadow: 2px 2px 2px black;
+    color: black;
+   
+}
+
+.returnTop a:hover, .returnTop a:focus{
+        font-size: 1.5rem;
+}
+
+.copyRight{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #262626;
+    color:#fff;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
