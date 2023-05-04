@@ -286,7 +286,11 @@ nav ul li a::after {
 nav ul li a:hover {
   cursor: pointer;
   width: 100%;
-  border-bottom: 1px double red;
+  border-bottom: 2px double #0D3050;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 h1 {
@@ -294,7 +298,6 @@ h1 {
   margin: 135px 0 0 20%;
   font-weight: bold;
   font-family: "Taviraj", serif;
-  background-color: blue;
 }
 
 .headerText p {
@@ -349,6 +352,10 @@ nav .fa-sharp {
   font-size: 1.5rem;
 }
 
+.aboutColTwo h2 {
+  color: black;
+}
+
 .subTitle {
   font-size: 50px;
   font-weight: 500;
@@ -359,10 +366,9 @@ nav .fa-sharp {
 
 .button {
   display: block;
-  background: black;
-  color: white;
+  background: #B3D3E0;
+  color: #262626;
   margin: 15% auto auto auto;
-  border: 1px solid #ff004f;
   padding: 14px 50px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -374,7 +380,8 @@ nav .fa-sharp {
 }
 
 .button:hover {
-  background: blue;
+  background: #0D3050;
+  color: white;
 }
 
 form button {
@@ -394,7 +401,6 @@ form button {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 0;
-  margin: 20px auto 60px auto;
 }
 
 .skills li {
@@ -417,11 +423,23 @@ form button {
   font-size: 1.5rem;
   padding: 20px 0;
   margin: 0 50px;
-  -ms-flex-preferred-size: 23%;
-      flex-basis: 23%;
+  -ms-flex-preferred-size: 18%;
+      flex-basis: 18%;
+  color: white;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .skills li img {
   width: 75px;
+}
+
+.skills li:hover {
+  color: white;
+  cursor: pointer;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 h2 {
@@ -433,14 +451,17 @@ h2 {
   font-weight: 500;
   font-family: "Overpass", sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 .skillsSection {
   padding: 70px 0 0 0;
+  background: #0D3050;
 }
 
 #portfolio {
   padding: 70px 0 0 0;
+  background: #B3D3E0;
 }
 
 .workList {
@@ -473,6 +494,8 @@ h2 {
   padding: 10px 30px;
   margin: 10px;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .madeWith li {
   list-style: none;
@@ -485,29 +508,30 @@ h2 {
 }
 
 .layer a {
-  border-top: 1px solid #b08564;
-  border-bottom: 1px solid #b08564;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 2px;
   padding: 8px;
   margin-top: 20px;
   text-decoration: none;
+  color: white;
 }
 
 .layer a:hover {
-  color: #b08564;
-  border-left: 1px solid #b08564;
-  border-right: 1px solid #b08564;
-  border-bottom: 1px solid #b08564;
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
   border-radius: 15px;
 }
 
 .layer {
   width: 100%;
   height: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(#ff004f));
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(#39b3c5));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #39b3c5);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -529,12 +553,25 @@ h2 {
   text-align: center;
   -webkit-transition: height 0.8s;
   transition: height 0.8s;
+  color: white;
 }
 
-.layer h4 {
-  font-weight: 800;
+.layer h3 {
   margin-bottom: 0px;
-  padding: 15px;
+  padding: 30px;
+  font-size: 150%;
+}
+
+.layer p {
+  font-size: 20px;
+}
+
+.socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px;
+  padding-right: 30px;
 }
 
 .work:hover img {
@@ -546,12 +583,21 @@ h2 {
   height: 100%;
 }
 
+.container h2 {
+  color: black;
+}
+
+#contact {
+  padding: 70px 0 0 0;
+}
+
 .contactLeft {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
 }
 .contactLeft p {
   margin-top: 55px;
+  font-size: 1.3rem;
 }
 
 .contactRight {
@@ -560,7 +606,7 @@ h2 {
 }
 
 .contactLeft p i {
-  color: purple;
+  color: #0D3050;
   font-size: 25px;
   margin-right: 15px;
 }
@@ -572,7 +618,7 @@ h2 {
   text-decoration: none;
   font-size: 30px;
   margin-right: 70px;
-  color: purple;
+  color: #0D3050;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -581,9 +627,9 @@ h2 {
 }
 
 .socialIcons a:hover {
-  color: blue;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  color: #B3D3E0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
   cursor: pointer;
 }
 
@@ -596,12 +642,18 @@ form input, form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
+  background: #B3D3E0;
   padding: 15px;
   margin: 15px 0;
-  color: #fff;
+  color: black;
   font-size: 18px;
   border-radius: 6px;
+}
+
+.returnTop {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
 }
 
 .returnTop a {
@@ -611,17 +663,37 @@ form input, form textarea {
 }
 
 .returnTop a:hover, .returnTop a:focus {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .copyRight {
   width: 100%;
   text-align: center;
   padding: 25px;
-  background: #262626;
+  background: #0D3050;
   color: #fff;
   font-weight: 300;
   margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.buttonOne {
+  display: block;
+  background: #B3D3E0;
+  color: #262626;
+  padding: 14px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.buttonOne:hover {
+  background: #0D3050;
+  color: white;
 }
 
 @media (max-width: 600px) {

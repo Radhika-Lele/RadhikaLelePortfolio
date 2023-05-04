@@ -62,7 +62,8 @@ nav ul li a::after{
 nav ul li a:hover{
      cursor: pointer;
      width: 100%;
-     border-bottom : 1px double red;
+     border-bottom : 2px double #0D3050;
+     transition: transform 0.5s
 }
 
 // .navigation{
@@ -78,7 +79,6 @@ nav ul li a:hover{
         font-weight: bold;
         font-family: 'Taviraj', serif;
         // margin-left: 20%;
-        background-color: blue;
     }
 
 .headerText p{
