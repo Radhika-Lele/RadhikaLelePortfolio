@@ -23,31 +23,44 @@
     }
 
     .socialIcons a{
-         margin-left: 15px;
+         margin: 0 15px;
+        }
     }
         
-}
 
 @media(max-width:790px){
       .rowOne{
         flex-direction: column;
         align-items: center;
+        margin-top: -5%;
       }
+    //   .contactRight{
+    //    margin-top: -4%;
+    //   }
+
+    //   .contactLeft p{
+    //     margin-top:6%;
+    //   }
 
       .headerText{
         // margin-top: 100%;
         font-size: 16px;
     }
 
+    .socialLinks{
+        margin-top: 0;
+    }
+
     .headerText h1{
         font-size: 2.5rem;
-        text-align: center;
+        text-align: left;
         margin-top: 0px;
         position: absolute;
         top: 25%;
         right: 40%;
         left: -11%;
         font-size: 50px;
+        width:100%;
       }
       
       .headerText p{
@@ -56,12 +69,7 @@
         top: 32%;
         left: -14%;
       }
-      
-
-
-
-
-   
+        
 // Hamburger Menu
     nav ul .fa-solid{
         display:block;
@@ -113,6 +121,62 @@
     //     font-size:1.5rem;
     //     text-align: center;
     // }
+
+ @media(max-width:650px) {
+    .headerText h1{
+        font-size:40px;
+    }
+
+    .headerText p{
+        font-size:30px;
+   } 
+   
+   .row{
+    flex-direction: column;
+   }
+   .aboutColOne img{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: -10%;
+   }
+
+   .aboutColTwo p{
+        margin-top: -10px;
+        margin-left: 20px;
+   }
+
+   .aboutColTwo a{
+    margin-left: 20%;
+   }
+   .aboutColTwo h2{
+    margin-top: 10%;
+   }
+
+   .buttonOne{
+    margin-left:20% ;
+   }
+
+   .socialIcons a{
+    margin-left: -3px;
+   }
+   
+ }
+
+ @media(max-width:420px){
+    .container h2{
+        font-size: 37px;
+    }
+    .headerText p{
+        font-size:25px;
+        margin-left: 19%;
+   } 
+
+   .headerText h1{
+    margin-left: 15%;
+   }
+   
+ }
 
 
 
