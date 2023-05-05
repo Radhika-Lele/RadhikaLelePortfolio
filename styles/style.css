@@ -262,7 +262,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 44px;
+  margin: 20px 44px;
   padding-right: 50px;
 }
 nav ul li a {
@@ -286,7 +286,7 @@ nav ul li a::after {
 nav ul li a:hover {
   cursor: pointer;
   width: 100%;
-  border-bottom: 2px double #0D3050;
+  border-bottom: 2px solid #0D3050;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -360,15 +360,15 @@ nav .fa-sharp {
   font-size: 50px;
   font-weight: 500;
   font-weight: bold;
-  padding: 0 0 15% 0;
   font-family: "Overpass", sans-serif;
+  margin-bottom: 10%;
 }
 
 .button {
   display: block;
   background: #B3D3E0;
   color: #262626;
-  margin: 15% auto auto auto;
+  margin: 13% auto 10% auto;
   padding: 14px 50px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -696,13 +696,63 @@ form input, form textarea {
   color: white;
 }
 
-@media (max-width: 600px) {
+.rowOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1020px) {
+  nav ul li {
+    font-size: 20px;
+    margin: 30px;
+  }
+}
+@media (max-width: 890px) {
+  nav ul li {
+    font-size: 15px;
+    margin: 15px;
+  }
+  .button {
+    margin: 10%;
+  }
+  .socialIcons a {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 790px) {
+  .rowOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .headerText {
-    margin-top: 100%;
     font-size: 16px;
   }
-  h1 {
+  .headerText h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0px;
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    left: -11%;
+    font-size: 50px;
+  }
+  .headerText p {
     font-size: 30px;
+    position: absolute;
+    top: 32%;
+    left: -14%;
   }
   nav ul .fa-solid {
     display: block;
@@ -717,9 +767,10 @@ form input, form textarea {
     top: 0;
     right: -200px;
     width: 200px;
-    height: 100vh;
+    height: 60vh;
     padding-top: 50px;
-    background: #365C46;
+    background: #0D3050;
+    color: white;
     z-index: 2;
     -webkit-transition: right 0.5s;
     transition: right 0.5s;
@@ -727,6 +778,9 @@ form input, form textarea {
   nav ul li {
     display: block;
     margin: 25px;
+  }
+  nav ul li a {
+    color: white;
   }
   nav ul .fa-solid {
     position: absolute;
