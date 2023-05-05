@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px 0;
-    margin: 20px auto 60px auto;
+    // margin: 20px auto 60px auto;
   
 }
 .skills li{
@@ -17,12 +17,20 @@
     // text-align: center;
     padding: 20px 0;
     margin: 0 50px;
-    flex-basis: 23%;
-
+    flex-basis: 10%;
+    color: white;
+    transition: transform 0.5s ;
+    
 
     img{
         width: 75px;
     }
+}
+
+.skills li:hover{
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px);
 }
 
 h2{
@@ -32,8 +40,10 @@ h2{
     font-weight: 500;
     font-family: 'Overpass', sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 .skillsSection{
     padding: 70px 0 0 0;
+    background: #0D3050;
 }
