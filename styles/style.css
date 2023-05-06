@@ -235,6 +235,7 @@ html {
 
 body {
   color: black;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -423,13 +424,16 @@ form button {
   font-size: 1.5rem;
   padding: 20px 0;
   margin: 0 50px;
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  -ms-flex-preferred-size: 18%;
+      flex-basis: 18%;
   color: white;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  width: 75px;
+  text-align: center;
+  align-items: center;
 }
 .skills li img {
   width: 75px;
