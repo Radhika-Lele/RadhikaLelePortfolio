@@ -164,6 +164,10 @@
  }
 
  @media(max-width:420px){
+    html,body{
+        overflow-x: hidden;
+    }
+
     .container h2{
         font-size: 37px;
     }
@@ -174,6 +178,12 @@
 
    .headerText h1{
     margin-left: 15%;
+   }
+
+   .skills li{
+    width: 75px;
+    text-align: center;
+    align-items: center;
    }
    
  }
