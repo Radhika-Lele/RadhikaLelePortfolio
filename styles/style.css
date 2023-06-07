@@ -462,30 +462,10 @@ h2 {
 
 #portfolio {
   padding: 70px 0 0 0;
-  background: #B3D3E0;
 }
 
-.workList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-.work {
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-.work img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  height: auto;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+.projectWork {
+  background: #e6f3ff;
 }
 
 .madeWith {
@@ -589,10 +569,135 @@ h2 {
   height: 100%;
 }
 
-.container h2 {
+h2 {
   color: black;
 }
 
+.project {
+  border: solid 1px black;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.project .preview {
+  width: 50%;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project, .reverse {
+  border: solid 1px black;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project .projectInfo {
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.project h4 {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #b08564;
+}
+
+.toolkit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+ul {
+  list-style: none;
+}
+
+.toolkit li {
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px 10px 5px 0;
+  border: 1px solid #b08564;
+  border-radius: 15px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+.link {
+  margin-right: 15px;
+}
+
+.link a {
+  padding: 5px;
+  border-top: 1px solid #b08564;
+  border-bottom: 1px solid #b08564;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  letter-spacing: 2px;
+}
+
+.link a:hover {
+  color: #b08564;
+  border-left: 1px solid #b08564;
+  border-right: 1px solid #b08564;
+  border-radius: 15px;
+}
+
+@media (max-width: 1060px) {
+  .project .projectInfo, .project .preview, .reverse .projectInfo, .reverse .preview {
+    width: 100%;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .toolkit, .view {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 540px) {
+  .project .preview img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 #contact {
   padding: 70px 0 0 0;
 }
