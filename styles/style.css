@@ -234,7 +234,6 @@ html {
 }
 
 body {
-  color: black;
   overflow-x: hidden;
 }
 
@@ -247,7 +246,7 @@ body {
 .header {
   width: 100%;
   height: 60vh;
-  background: url("./../assets/portfolio-background-header-53082_1080x675.jpg");
+  background: #0D3050;
   background-size: cover;
   background-position: center;
 }
@@ -265,47 +264,61 @@ nav ul li {
   list-style: none;
   margin: 20px 44px;
   padding-right: 50px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 nav ul li a {
-  color: black;
+  color: #e6f3ff;
   text-decoration: none;
   font-size: 25px;
-}
-
-nav ul li a::after {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #365C46;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 nav ul li a:hover {
+  color: #0D3050;
+  background: #e6f3ff;
+  border-bottom: 1px solid #0D3050;
+  border-radius: 15px;
   cursor: pointer;
-  width: 100%;
-  border-bottom: 2px solid #0D3050;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+nav ul li a::after {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  content: "";
+  height: 3px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav ul li a:hover:after {
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
 }
 
 h1 {
   font-size: 4.5rem;
   margin: 135px 0 0 20%;
   font-weight: bold;
-  font-family: "Taviraj", serif;
+  font-family: "Jost", sans-serif;
+  color: #e6f3ff;
 }
 
 .headerText p {
-  font-family: "Overpass", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   margin-left: 24%;
+  color: #e6f3ff;
 }
 
 nav ul .fa-solid {
@@ -322,6 +335,10 @@ nav .fa-sharp {
 
 .wrapperOne {
   padding-top: 70px;
+}
+
+.aboutMeSection {
+  background: #e6f3ff;
 }
 
 .row {
@@ -351,6 +368,8 @@ nav .fa-sharp {
 }
 .aboutColTwo p {
   font-size: 1.5rem;
+  font-family: "Jost", sans-serif;
+  color: #0D3050;
 }
 
 .aboutColTwo h2 {
@@ -361,14 +380,16 @@ nav .fa-sharp {
   font-size: 50px;
   font-weight: 500;
   font-weight: bold;
-  font-family: "Overpass", sans-serif;
+  font-family: "Jost", sans-serif;
   margin-bottom: 10%;
+  color: #0D3050;
 }
 
 .button {
   display: block;
-  background: #B3D3E0;
-  color: #262626;
+  font-family: "Jost", sans-serif;
+  background: #0D3050;
+  color: white;
   margin: 13% auto 10% auto;
   padding: 14px 50px;
   width: -webkit-fit-content;
@@ -381,8 +402,8 @@ nav .fa-sharp {
 }
 
 .button:hover {
-  background: #0D3050;
-  color: white;
+  background: #7aafe1;
+  color: black;
 }
 
 form button {
@@ -443,14 +464,14 @@ form button {
           transform: translateY(-5px);
 }
 
-h2 {
+.skillsSection h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   font-size: 50px;
   font-weight: 500;
-  font-family: "Overpass", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: bold;
   color: white;
 }
@@ -569,8 +590,31 @@ h2 {
   height: 100%;
 }
 
-h2 {
-  color: black;
+.wrapperOne h2 {
+  color: #0D3050;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.wrapperOne {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .project {
@@ -582,6 +626,12 @@ h2 {
 
 .project .preview {
   width: 50%;
+}
+
+.project .preview img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
 }
 
 .project {
@@ -614,13 +664,18 @@ a {
 
 .project .projectInfo {
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
-.project h4 {
+.projectInfo p {
+  color: #0D3050;
+}
+
+.project h3 {
   display: inline-block;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #b08564;
+  padding-bottom: 10px;
+  font-size: 35px;
+  color: #0D3050;
 }
 
 .toolkit {
@@ -632,6 +687,7 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-top: 10px;
 }
 
 ul {
@@ -639,13 +695,14 @@ ul {
 }
 
 .toolkit li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 5px;
   margin: 5px 10px 5px 0;
-  border: 1px solid #b08564;
+  border: 1px solid #0D3050;
   border-radius: 15px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  color: #0D3050;
 }
 
 .view {
@@ -653,6 +710,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin: 10px 0;
+  padding-top: 10px;
 }
 
 .link {
@@ -661,18 +719,21 @@ ul {
 
 .link a {
   padding: 5px;
-  border-top: 1px solid #b08564;
-  border-bottom: 1px solid #b08564;
+  border-top: 1px solid #0D3050;
+  border-bottom: 1px solid #0D3050;
   -webkit-transition: 0.7s;
   transition: 0.7s;
   letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: #0D3050;
 }
 
 .link a:hover {
-  color: #b08564;
-  border-left: 1px solid #b08564;
-  border-right: 1px solid #b08564;
+  border-left: 1px solid #0D3050;
+  border-right: 1px solid #0D3050;
   border-radius: 15px;
+  color: white;
+  background: #0D3050;
 }
 
 @media (max-width: 1060px) {
