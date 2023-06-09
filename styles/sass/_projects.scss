@@ -3,6 +3,7 @@
   
  }
 
+
  .projectWork{
     // background: #f0f8ff;
     background: #e6f3ff;
@@ -170,13 +171,10 @@
     text-align: center;
     font-size: 50px;
     font-weight: 500;
-    font-family: 'Jost', sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
     font-weight: bold;
 }
 
-body{
-    font-family: 'Jost', sans-serif;
-}
 
 body p{
     text-align: justify;
@@ -187,11 +185,14 @@ body p{
         width: 90%;
         margin: 0 auto;
 }
+
 .project{
-border: solid 1px black;
+border: double 5px #0D3050;
 border-radius: 15px;
 margin: 20px 0;
 padding: 20px;
+display: flex;
+align-items: center;
 }
 
 .project .preview{
@@ -203,10 +204,10 @@ padding: 20px;
                      border-radius: 10px;
                     display: block;
 }
-.project {
-    display: flex;
-    align-items: center;
-  }
+// .project {
+//     display: flex;
+//     align-items: center;
+//   }
 
 .project, .reverse {
     border: solid 1px black;
@@ -226,6 +227,7 @@ a{
 .project .projectInfo {
     width: 50%;
     font-size: 1.4rem;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .projectInfo p{

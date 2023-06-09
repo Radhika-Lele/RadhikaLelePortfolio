@@ -233,7 +233,12 @@ html {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  font-family: "Alegreya Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -274,6 +279,7 @@ nav ul li a {
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  font-family: "Alegreya Sans";
 }
 
 nav ul li a:hover {
@@ -306,18 +312,33 @@ nav ul li a:hover:after {
 }
 
 h1 {
-  font-size: 4.5rem;
-  margin: 135px 0 0 20%;
+  font-size: 6rem;
+  margin: 135px 0 0 25%;
   font-weight: bold;
-  font-family: "Jost", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
+  width: 100%;
   color: #e6f3ff;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 5s, cursor 0.4s step-end infinite alternate;
+          animation: typing 5s, cursor 0.4s step-end infinite alternate;
 }
 
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 .headerText p {
-  font-family: "Jost", sans-serif;
-  font-weight: bold;
+  font-family: "Alegreya Sans", sans-serif;
   font-size: 2.5rem;
-  margin-left: 24%;
+  margin-left: 33%;
   color: #e6f3ff;
 }
 
@@ -327,6 +348,14 @@ nav ul .fa-solid {
 
 nav .fa-sharp {
   display: none;
+}
+
+.fa-bars {
+  color: #e6f3ff;
+}
+
+.fa-xmark {
+  color: #0D3050;
 }
 
 #about {
@@ -368,26 +397,22 @@ nav .fa-sharp {
 }
 .aboutColTwo p {
   font-size: 1.5rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   color: #0D3050;
-}
-
-.aboutColTwo h2 {
-  color: black;
 }
 
 .subTitle {
   font-size: 50px;
   font-weight: 500;
   font-weight: bold;
-  font-family: "Jost", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   margin-bottom: 10%;
   color: #0D3050;
 }
 
 .button {
   display: block;
-  font-family: "Jost", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   background: #0D3050;
   color: white;
   margin: 13% auto 10% auto;
@@ -447,7 +472,7 @@ form button {
   margin: 0 30px;
   -ms-flex-preferred-size: 18%;
       flex-basis: 18%;
-  color: white;
+  color: #e6f3ff;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -458,10 +483,10 @@ form button {
 }
 
 .skills li:hover {
-  color: white;
+  color: rgb(161, 181, 217);
   cursor: pointer;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .skillsSection h2 {
@@ -471,9 +496,9 @@ form button {
   text-align: center;
   font-size: 50px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
-  color: white;
+  color: #e6f3ff;
 }
 
 .skillsSection {
@@ -598,12 +623,8 @@ form button {
   text-align: center;
   font-size: 50px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
-}
-
-body {
-  font-family: "Jost", sans-serif;
 }
 
 body p {
@@ -618,10 +639,16 @@ body p {
 }
 
 .project {
-  border: solid 1px black;
+  border: double 5px #0D3050;
   border-radius: 15px;
   margin: 20px 0;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project .preview {
@@ -632,15 +659,6 @@ body p {
   width: 100%;
   border-radius: 10px;
   display: block;
-}
-
-.project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .project, .reverse {
@@ -665,6 +683,7 @@ a {
 .project .projectInfo {
   width: 50%;
   font-size: 1.4rem;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 .projectInfo p {
@@ -760,7 +779,25 @@ ul {
   }
 }
 #contact {
-  padding: 70px 0 0 0;
+  padding: 35px 0 0 0;
+  background: #0D3050;
+  margin-top: -20px;
+}
+
+.wrapperTwo {
+  background: #0D3050;
+  max-height: 100%;
+}
+
+.container h2 {
+  font-size: 50px;
+  color: #e6f3ff;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contactLeft {
@@ -770,6 +807,8 @@ ul {
 .contactLeft p {
   margin-top: 55px;
   font-size: 1.3rem;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #e6f3ff;
 }
 
 .contactRight {
@@ -778,7 +817,7 @@ ul {
 }
 
 .contactLeft p i {
-  color: #0D3050;
+  color: #e6f3ff;
   font-size: 25px;
   margin-right: 15px;
 }
@@ -790,7 +829,7 @@ ul {
   text-decoration: none;
   font-size: 30px;
   margin-right: 70px;
-  color: #0D3050;
+  color: #e6f3ff;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -799,7 +838,7 @@ ul {
 }
 
 .socialIcons a:hover {
-  color: #B3D3E0;
+  color: #77acde;
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   cursor: pointer;
@@ -808,18 +847,23 @@ ul {
 .contactRight form {
   width: 100%;
   margin-top: 37px;
+  color: #e6f3ff;
 }
 
 form input, form textarea {
   width: 100%;
-  border: 0;
+  border: double 5px;
   outline: none;
-  background: #B3D3E0;
+  background: #e6f3ff;
   padding: 15px;
   margin: 15px 0;
-  color: black;
+  color: #0D3050;
   font-size: 18px;
   border-radius: 6px;
+}
+
+form input, form textarea:hover {
+  cursor: pointer;
 }
 
 .returnTop {
@@ -830,18 +874,23 @@ form input, form textarea {
 
 .returnTop a {
   text-decoration: none;
-  padding: 10px 20px;
-  color: black;
+  padding: 5px 10px;
+  color: #0D3050;
+  border: double 5px;
+  background: #e6f3ff;
 }
 
 .returnTop a:hover, .returnTop a:focus {
-  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .copyRight {
   width: 100%;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   background: #0D3050;
   color: #fff;
   font-weight: 300;
@@ -851,9 +900,9 @@ form input, form textarea {
 
 .buttonOne {
   display: block;
-  background: #B3D3E0;
-  color: #262626;
-  padding: 14px 50px;
+  background: #e6f3ff;
+  color: #0D3050;
+  padding: 14px 30px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -861,11 +910,12 @@ form input, form textarea {
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: double 5px;
 }
 
 .buttonOne:hover {
-  background: #0D3050;
-  color: white;
+  background: #77acde;
+  color: #0D3050;
 }
 
 .rowOne {
@@ -933,11 +983,11 @@ form input, form textarea {
   }
   nav ul .fa-solid {
     display: block;
-    font-size: 25px;
+    font-size: 40px;
   }
   nav .fa-sharp {
     display: block;
-    font-size: 25px;
+    font-size: 50px;
   }
   nav ul {
     position: fixed;
@@ -946,8 +996,8 @@ form input, form textarea {
     width: 200px;
     height: 60vh;
     padding-top: 50px;
-    background: #0D3050;
-    color: white;
+    background: #e6f3ff;
+    color: #0D3050;
     z-index: 2;
     -webkit-transition: right 0.5s;
     transition: right 0.5s;
@@ -957,7 +1007,11 @@ form input, form textarea {
     margin: 25px;
   }
   nav ul li a {
-    color: white;
+    color: #0D3050;
+  }
+  nav ul li a:hover {
+    background: #0D3050;
+    color: #e6f3ff;
   }
   nav ul .fa-solid {
     position: absolute;

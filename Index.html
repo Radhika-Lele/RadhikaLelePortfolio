@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
 
     <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/a9dfc8582d.js" crossorigin="anonymous"></script>
@@ -37,7 +44,7 @@
                
             <div class="headerText">
                 <h1><span>RADHIKA</span> LELE</h1>
-                <p>Front End Web Developer</p>
+                <p data-text="Front End Web Developer">Front End Web Developer</p>
             </div>
         </div>
     </div>
@@ -204,7 +211,7 @@
           </div>
     </div> -->
 <!-- </div>  -->
-<div class="project">
+<div class="project" data-aos="fade-left">
     <div class="preview">
         <a href="https://robo-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/Robo Trivia laptop.png" alt="Robo Trivia quiz app">
@@ -227,7 +234,7 @@
     </div>
 </div>
 
-<div class="project reverse">
+<div class="project reverse"  data-aos="fade-right">
     <div class="preview">
         <a href="https://recipe-find-app.netlify.app/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/Recipe Finder laptop.png" alt="Recipe Finder App">
@@ -254,7 +261,7 @@
     </div>
 </div>
 
-<div class="project">
+<div class="project" data-aos="fade-left">
     <div class="preview">
         <a href="https://novas-boutique-shop.netlify.app/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/Novas Boutique Shop laptop.png" alt="Online Firniture shopping website">
@@ -280,7 +287,7 @@
     </div>
 </div>
 
-<div class="project reverse">
+<div class="project reverse" data-aos="fade-right">
     <div class="preview">
         <a href="https://multi-page-psd.netlify.app/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/PSD laptop.png" alt="Multi page PSD Conversion">
@@ -327,6 +334,7 @@
 
 
 <!-- CONTACT ME -->
+<div class="wrapperTwo">
 <div id="contact">
     <div class="container">
         <h2>CONTACT ME</h2>
@@ -347,7 +355,7 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="buttonOne">Get In Touch</button>
+                    <button type="submit" class="buttonOne">Connect !</button>
                 </form>
             </div>
         </div>
@@ -358,7 +366,20 @@
         <p>Developed and designed by Radhika Lele 2023</p>  
      </div>
 </div>
+</div>
+
+
 <script src="./styles/scripts/scripts.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000
+  });
+</script>
+
+
 </body>
 
 </html>

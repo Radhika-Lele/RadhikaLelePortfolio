@@ -73,12 +73,12 @@
 // Hamburger Menu
     nav ul .fa-solid{
         display:block;
-        font-size: 25px;
+        font-size: 40px;
     }
 
     nav .fa-sharp{
         display: block;
-        font-size: 25px;
+        font-size: 50px;
     }
 
      nav ul{
@@ -88,8 +88,8 @@
         width: 200px;
         height:60vh;
         padding-top: 50px;
-        background: #0D3050;
-        color: white;
+        background: #e6f3ff;
+        color: #0D3050;
         z-index : 2;
         transition: right 0.5s;
      }
@@ -98,10 +98,14 @@
          margin:25px;
 
          a{
-            color: white;
+            color: #0D3050;
          }
       }
     
+    nav ul li a:hover{
+        background: #0D3050;
+        color: #e6f3ff;
+    }
     nav ul .fa-solid{
         position: absolute;
         top:25px;
