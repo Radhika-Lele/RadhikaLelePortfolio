@@ -1,40 +1,60 @@
 #portfolio{
     padding: 70px 0 0 0;
-    background: #B3D3E0;
-}
+  
+ }
 
-.workList{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap :40px;
-    margin-top: 50px;
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow:hidden ;
 
-    img{
-        width: 100%;
-        border-radius: 10px;
-        display: block;
-        height: auto;
-        transition:transform 0.5s;
-    }
-}
+ .projectWork{
+    // background: #f0f8ff;
+    background: #e6f3ff;
+ }
+
+// .workList{
+//     display: grid;
+//      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+//     // grid-template-columns: repeat(2, 1fr);
+//     grid-gap :40px;
+//     margin-top: 50px;
+// }
+
+// .work{
+//     border-radius: 10px;
+//     position: relative;
+//     overflow:hidden ;
+
+//     img{
+//         width: 100%;
+//         border-radius: 10px;
+//         display: block;
+//         height: auto;
+//         transition:transform 0.5s;
+//     }
+// }
 
 // .workList{
 //     display:flex;
 //     justify-content: space-between;
 //     flex-wrap: wrap;
 //     align-items: center;
+// }
 
-//     .work img{
-//         max-width: 100%;
-//         height: auto;
-//         display: block;
-        
-//     }
+// .firstSection{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+// }
+
+// .firstProject,
+// .secondProject{
+//     position: relative;
+
+//     img{
+//                 width: 100%;
+//                  border-radius: 10px;
+//                  display: block;
+//                  height: auto;
+//                  transition:transform 0.5s;
+//            }
 // }
 
 .madeWith{
@@ -77,7 +97,7 @@
 }
 
 .layer{
-     width: 100%;
+    width: 100%;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #39b3c5);
     border-radius: 10px;
@@ -114,19 +134,177 @@
     justify-content: end;
 }
 
-// .link{
-//     margin-right: 15px;
-// }
-
 .work:hover img{
-     transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .work:hover .layer{
-    height: 100%;
+   height: 100%;
 }
 
-.container h2{
-    color:black;
+// .firstProject:hover img{
+//      transform: scale(1);
+// }
+
+// .firstProject:hover .layer{
+//     height: 100%;
+// }
+
+// .secondProject:hover img{
+//     transform: scale(1);
+// }
+
+// .secondProject:hover .layer{
+//    height: 100%;
+// }
+
+
+
+
+
+
+
+//*********************** New CSS for Gabby style****************//
+.wrapperOne h2{
+    color:#0D3050;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: bold;
 }
 
+
+body p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.wrapperOne{
+        max-width: 1260px;
+        width: 90%;
+        margin: 0 auto;
+}
+
+.project{
+border: double 5px #0D3050;
+border-radius: 15px;
+margin: 20px 0;
+padding: 20px;
+display: flex;
+align-items: center;
+}
+
+.project .preview{
+    width: 50%;
+}
+
+.project .preview img{
+                    width: 100%;
+                     border-radius: 10px;
+                    display: block;
+}
+// .project {
+//     display: flex;
+//     align-items: center;
+//   }
+
+.project, .reverse {
+    border: solid 1px black;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.project .projectInfo {
+    width: 50%;
+    font-size: 1.4rem;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.projectInfo p{
+    color:#0D3050;
+}
+.project h3{
+display: inline-block;
+padding-bottom: 10px;
+font-size: 35px;
+color:#0D3050;
+}
+.toolkit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.toolkit li {
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 5px 10px 5px 0;
+    border: 1px solid #0D3050;
+    border-radius: 15px;
+    transition: 0.7s;
+    color: #0D3050;
+}
+.view{
+    display: flex;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+
+.link{
+    margin-right: 15px;
+}
+
+.link a{
+padding: 5px;
+border-top: 1px solid #0D3050;
+border-bottom: 1px solid #0D3050;
+transition: 0.7s;
+letter-spacing: 2px;
+font-size: 1.2rem;
+color: #0D3050;
+}
+
+.link a:hover{
+border-left: 1px solid #0D3050;
+border-right: 1px solid #0D3050;
+border-radius: 15px;
+color: white;
+background: #0D3050;
+}
+
+
+  @media (max-width: 1060px){
+  .project .projectInfo, .project .preview, .reverse .projectInfo, .reverse .preview {
+    width: 100%;
+  }
+
+  .project {
+    flex-direction: column;
+    text-align: center;
+}
+.toolkit, .view {
+  justify-content: center;
+}
+}
+
+@media(max-width:540px){
+   .project .preview img{
+     max-width: 100%;
+     height: auto;
+   }
+}

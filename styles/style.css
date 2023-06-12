@@ -233,8 +233,12 @@ html {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: black;
+  font-family: "Alegreya Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -247,7 +251,7 @@ body {
 .header {
   width: 100%;
   height: 60vh;
-  background: url("./../assets/portfolio-background-header-53082_1080x675.jpg");
+  background: #0D3050;
   background-size: cover;
   background-position: center;
 }
@@ -265,49 +269,88 @@ nav ul li {
   list-style: none;
   margin: 20px 44px;
   padding-right: 50px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 nav ul li a {
-  color: black;
+  color: #e6f3ff;
   text-decoration: none;
   font-size: 25px;
-}
-
-nav ul li a::after {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #365C46;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 nav ul li a:hover {
+  color: #0D3050;
+  background: #e6f3ff;
+  border-bottom: 1px solid #0D3050;
+  border-radius: 15px;
   cursor: pointer;
-  width: 100%;
-  border-bottom: 2px solid #0D3050;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+nav ul li a::after {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  content: "";
+  height: 3px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav ul li a:hover:after {
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
 }
 
 h1 {
-  font-size: 4.5rem;
-  margin: 135px 0 0 20%;
+  font-size: 6rem;
+  margin: 135px 0 0 25%;
   font-weight: bold;
-  font-family: "Taviraj", serif;
+  font-family: "Alegreya Sans", sans-serif;
+  width: 100%;
+  color: #e6f3ff;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 5s, cursor 0.4s step-end infinite alternate;
+          animation: typing 5s, cursor 0.4s step-end infinite alternate;
 }
 
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 .headerText p {
-  font-family: "Overpass", sans-serif;
-  font-weight: bold;
+  font-family: "Alegreya Sans", sans-serif;
   font-size: 2.5rem;
-  margin-left: 24%;
+  margin-left: 33%;
+  color: #e6f3ff;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 8s, cursor 0.4s step-end infinite alternate;
+          animation: typing 8s, cursor 0.4s step-end infinite alternate;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 nav ul .fa-solid {
   display: none;
 }
@@ -316,12 +359,24 @@ nav .fa-sharp {
   display: none;
 }
 
+.fa-bars {
+  color: #e6f3ff;
+}
+
+.fa-xmark {
+  color: #0D3050;
+}
+
 #about {
   color: Black;
 }
 
 .wrapperOne {
   padding-top: 70px;
+}
+
+.aboutMeSection {
+  background: #e6f3ff;
 }
 
 .row {
@@ -351,24 +406,24 @@ nav .fa-sharp {
 }
 .aboutColTwo p {
   font-size: 1.5rem;
-}
-
-.aboutColTwo h2 {
-  color: black;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #0D3050;
 }
 
 .subTitle {
   font-size: 50px;
   font-weight: 500;
   font-weight: bold;
-  font-family: "Overpass", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   margin-bottom: 10%;
+  color: #0D3050;
 }
 
 .button {
   display: block;
-  background: #B3D3E0;
-  color: #262626;
+  font-family: "Alegreya Sans", sans-serif;
+  background: #0D3050;
+  color: white;
   margin: 13% auto 10% auto;
   padding: 14px 50px;
   width: -webkit-fit-content;
@@ -381,8 +436,8 @@ nav .fa-sharp {
 }
 
 .button:hover {
-  background: #0D3050;
-  color: white;
+  background: #7aafe1;
+  color: black;
 }
 
 form button {
@@ -426,7 +481,7 @@ form button {
   margin: 0 30px;
   -ms-flex-preferred-size: 18%;
       flex-basis: 18%;
-  color: white;
+  color: #e6f3ff;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -437,22 +492,22 @@ form button {
 }
 
 .skills li:hover {
-  color: white;
+  color: rgb(161, 181, 217);
   cursor: pointer;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
-h2 {
+.skillsSection h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   font-size: 50px;
   font-weight: 500;
-  font-family: "Overpass", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
-  color: white;
+  color: #e6f3ff;
 }
 
 .skillsSection {
@@ -462,30 +517,10 @@ h2 {
 
 #portfolio {
   padding: 70px 0 0 0;
-  background: #B3D3E0;
 }
 
-.workList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-.work {
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-.work img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  height: auto;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+.projectWork {
+  background: #e6f3ff;
 }
 
 .madeWith {
@@ -589,12 +624,189 @@ h2 {
   height: 100%;
 }
 
-.container h2 {
-  color: black;
+.wrapperOne h2 {
+  color: #0D3050;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
 }
 
+body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.wrapperOne {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project {
+  border: double 5px #0D3050;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project .preview {
+  width: 50%;
+}
+
+.project .preview img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.project, .reverse {
+  border: solid 1px black;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project .projectInfo {
+  width: 50%;
+  font-size: 1.4rem;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.projectInfo p {
+  color: #0D3050;
+}
+
+.project h3 {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 35px;
+  color: #0D3050;
+}
+
+.toolkit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.toolkit li {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 5px 10px 5px 0;
+  border: 1px solid #0D3050;
+  border-radius: 15px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  color: #0D3050;
+}
+
+.view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+.link {
+  margin-right: 15px;
+}
+
+.link a {
+  padding: 5px;
+  border-top: 1px solid #0D3050;
+  border-bottom: 1px solid #0D3050;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: #0D3050;
+}
+
+.link a:hover {
+  border-left: 1px solid #0D3050;
+  border-right: 1px solid #0D3050;
+  border-radius: 15px;
+  color: white;
+  background: #0D3050;
+}
+
+@media (max-width: 1060px) {
+  .project .projectInfo, .project .preview, .reverse .projectInfo, .reverse .preview {
+    width: 100%;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .toolkit, .view {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 540px) {
+  .project .preview img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 #contact {
-  padding: 70px 0 0 0;
+  padding: 35px 0 0 0;
+  background: #0D3050;
+  margin-top: -18px;
+}
+
+.wrapperTwo {
+  background: #0D3050;
+  max-height: 100%;
+}
+
+.container h2 {
+  font-size: 50px;
+  color: #e6f3ff;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contactLeft {
@@ -603,7 +815,9 @@ h2 {
 }
 .contactLeft p {
   margin-top: 55px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #e6f3ff;
 }
 
 .contactRight {
@@ -612,7 +826,7 @@ h2 {
 }
 
 .contactLeft p i {
-  color: #0D3050;
+  color: #e6f3ff;
   font-size: 25px;
   margin-right: 15px;
 }
@@ -624,7 +838,7 @@ h2 {
   text-decoration: none;
   font-size: 30px;
   margin-right: 70px;
-  color: #0D3050;
+  color: #e6f3ff;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -633,7 +847,7 @@ h2 {
 }
 
 .socialIcons a:hover {
-  color: #B3D3E0;
+  color: #77acde;
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   cursor: pointer;
@@ -642,52 +856,70 @@ h2 {
 .contactRight form {
   width: 100%;
   margin-top: 37px;
+  color: #e6f3ff;
 }
 
 form input, form textarea {
   width: 100%;
-  border: 0;
+  border: double 5px;
   outline: none;
-  background: #B3D3E0;
-  padding: 15px;
+  background: #e6f3ff;
+  padding: 8px;
   margin: 15px 0;
-  color: black;
+  color: #0D3050;
   font-size: 18px;
   border-radius: 6px;
+}
+
+form input, form textarea:hover {
+  cursor: pointer;
 }
 
 .returnTop {
   text-align: center;
   font-size: 1.5rem;
   padding: 20px;
+  margin-right: 55px;
 }
 
 .returnTop a {
   text-decoration: none;
-  padding: 10px 20px;
-  color: black;
+  padding: 5px 10px;
+  color: #0D3050;
+  border: double 5px;
+  background: #e6f3ff;
 }
 
 .returnTop a:hover, .returnTop a:focus {
-  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .copyRight {
   width: 100%;
   text-align: center;
-  padding: 25px;
-  background: #0D3050;
-  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: #e6f3ff;
+  color: #0D3050;
   font-weight: 300;
   margin-top: 20px;
-  font-size: 1.5rem;
+}
+
+.copy {
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .buttonOne {
   display: block;
-  background: #B3D3E0;
-  color: #262626;
-  padding: 14px 50px;
+  background: #e6f3ff;
+  color: #0D3050;
+  padding: 10px 25px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -695,11 +927,12 @@ form input, form textarea {
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: double 5px;
 }
 
 .buttonOne:hover {
-  background: #0D3050;
-  color: white;
+  background: #77acde;
+  color: #0D3050;
 }
 
 .rowOne {
@@ -767,11 +1000,11 @@ form input, form textarea {
   }
   nav ul .fa-solid {
     display: block;
-    font-size: 25px;
+    font-size: 40px;
   }
   nav .fa-sharp {
     display: block;
-    font-size: 25px;
+    font-size: 50px;
   }
   nav ul {
     position: fixed;
@@ -780,8 +1013,8 @@ form input, form textarea {
     width: 200px;
     height: 60vh;
     padding-top: 50px;
-    background: #0D3050;
-    color: white;
+    background: #e6f3ff;
+    color: #0D3050;
     z-index: 2;
     -webkit-transition: right 0.5s;
     transition: right 0.5s;
@@ -791,7 +1024,11 @@ form input, form textarea {
     margin: 25px;
   }
   nav ul li a {
-    color: white;
+    color: #0D3050;
+  }
+  nav ul li a:hover {
+    background: #0D3050;
+    color: #e6f3ff;
   }
   nav ul .fa-solid {
     position: absolute;
