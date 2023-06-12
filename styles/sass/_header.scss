@@ -51,7 +51,7 @@ nav ul li{
         text-transform: uppercase;
         position: relative;
         z-index: 1;
-        font-family: 'Alegreya Sans', 
+        font-family: 'Alegreya Sans', sans-serif;
     }
 
 }
@@ -116,7 +116,14 @@ nav ul li a:hover:after{
     font-size: 2.5rem;
     margin-left: 33%;
     color: #e6f3ff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 8s, cursor .4s step-end infinite alternate;
 }
+
+@keyframes typing {
+    from {width: 0;}
+  }
 
 nav ul .fa-solid{
     display: none;

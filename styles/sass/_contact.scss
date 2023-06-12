@@ -1,7 +1,7 @@
 #contact{
     padding: 35px 0 0 0;
     background: #0D3050;
-    margin-top: -20px;
+    margin-top: -18px;
 }
 
 .wrapperTwo{
@@ -21,7 +21,7 @@ align-items: center;
 
     p{
          margin-top: 55px;
-         font-size: 1.3rem;
+         font-size: 1.4rem;
          font-family: "Alegreya Sans", sans-serif;
          color: #e6f3ff;
     }
@@ -67,7 +67,7 @@ form input, form textarea{
     border : double 5px ;
     outline : none;
     background: #e6f3ff;
-    padding: 15px;
+    padding: 8px;
     margin: 15px 0;
     color:#0D3050;
     font-size: 18px;
@@ -82,7 +82,9 @@ form input, form textarea:hover{
     text-align: center;
     font-size: 1.5rem;
     padding: 20px;
+    margin-right: 55px;
 }
+
 
 .returnTop a{
     text-decoration: none;
@@ -102,19 +104,25 @@ form input, form textarea:hover{
 .copyRight{
     width: 100%;
     text-align: center;
+    align-items: center;
     padding: 20px;
-    background: #0D3050;
-    color:#fff;
+    background:#e6f3ff;
+    color:#0D3050;
     font-weight: 300;
     margin-top: 20px;
-    font-size: 1.5rem
+    
+}
+
+.copy{
+    text-align: center;
+    font-size: 1.4rem
 }
 .buttonOne{
     display:block;
     background:#e6f3ff;
     color:#0D3050;
     // margin: 15% auto auto auto;
-    padding: 14px 30px;
+    padding: 10px 25px;
     width: fit-content;
     border-radius: 10px;
     text-decoration: none;

@@ -279,7 +279,7 @@ nav ul li a {
   text-transform: uppercase;
   position: relative;
   z-index: 1;
-  font-family: "Alegreya Sans";
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 nav ul li a:hover {
@@ -340,8 +340,17 @@ h1 {
   font-size: 2.5rem;
   margin-left: 33%;
   color: #e6f3ff;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 8s, cursor 0.4s step-end infinite alternate;
+          animation: typing 8s, cursor 0.4s step-end infinite alternate;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 nav ul .fa-solid {
   display: none;
 }
@@ -781,7 +790,7 @@ ul {
 #contact {
   padding: 35px 0 0 0;
   background: #0D3050;
-  margin-top: -20px;
+  margin-top: -18px;
 }
 
 .wrapperTwo {
@@ -806,7 +815,7 @@ ul {
 }
 .contactLeft p {
   margin-top: 55px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-family: "Alegreya Sans", sans-serif;
   color: #e6f3ff;
 }
@@ -855,7 +864,7 @@ form input, form textarea {
   border: double 5px;
   outline: none;
   background: #e6f3ff;
-  padding: 15px;
+  padding: 8px;
   margin: 15px 0;
   color: #0D3050;
   font-size: 18px;
@@ -870,6 +879,7 @@ form input, form textarea:hover {
   text-align: center;
   font-size: 1.5rem;
   padding: 20px;
+  margin-right: 55px;
 }
 
 .returnTop a {
@@ -890,19 +900,26 @@ form input, form textarea:hover {
 .copyRight {
   width: 100%;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
-  background: #0D3050;
-  color: #fff;
+  background: #e6f3ff;
+  color: #0D3050;
   font-weight: 300;
   margin-top: 20px;
-  font-size: 1.5rem;
+}
+
+.copy {
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .buttonOne {
   display: block;
   background: #e6f3ff;
   color: #0D3050;
-  padding: 14px 30px;
+  padding: 10px 25px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
