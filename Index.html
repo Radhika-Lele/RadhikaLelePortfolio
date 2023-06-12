@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!--------------- favicon-16x16 ---------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+<link rel="manifest" href="./assets/site.webmanifest">
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +19,12 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Offside&family=Poppins:wght@700&family=Taviraj&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
 
     <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/a9dfc8582d.js" crossorigin="anonymous"></script>
@@ -37,14 +51,14 @@
                
             <div class="headerText">
                 <h1><span>RADHIKA</span> LELE</h1>
-                <p>Front End Web Developer</p>
+                <p data-text="Front End Web Developer">Front End Web Developer</p>
             </div>
         </div>
     </div>
  <!-- </div>  -->
 
 <!-- ABOUT ME SECTION -->
-      <section class="wrapper" > 
+      <section class="aboutMeSection"> 
         <div id="about" class="wrapperOne">
             <div class="row">
                 <div class="aboutColOne">
@@ -58,7 +72,7 @@
                     When I am not coding I like to learn and try new receipes. Also I am obsessed with quilling, also called paper filigree to create decorative designs. 
                     </p>
 
-                    <a href="./assets/RadhikaLeleResume-1.pdf" download class="button" target="_blank">Download CV</a>    
+                    <a href="./assets/RadhikaLeleResume-3.pdf" download class="button" target="_blank">Download CV</a>    
                 </div>
             </div>
         </div>
@@ -86,13 +100,15 @@
 
 
 <!-- MY PROJECTS SECTION     -->
-<div id="portfolio">
-    <div class="container">
+<section class="projectWork">
+<div id="portfolio" class="wrapperOne">
+    <h2>MY PROJECTS</h2>
+    <!-- <div class="container">
        <h2>MY PROJECTS</h2>
-       <div class="workList">
-           <div class="work">
-             <img src="./assets/project1_PSD.svg" alt="table woth desktop" />
-             <div class="layer">
+        <div class="firstSection">
+          <div class="firstProject">
+            <img src="./assets/firstProject.jpg" alt="lamp with chairs"/>
+            <div class="layer">
                 <h3>Single Page PSD Conversion</h3>
                 <p>Translated static photoshop design image into functional, responsive website</p>
                 <ul class="madeWith">
@@ -104,29 +120,10 @@
                 <a href="https://github.com/Radhika-Lele/RadhikaLeleProjectOne"  target="_blank">GITHUB <i class="fa-brands fa-github"></i></a>
                 </div>
              </div>
-           </div>
-
-
-           <div class="work">
-            <img src="./assets/Project 2.svg" alt="couch with lamp" />
-            <div class="layer">
-                <h3>NOVAS Boutique Shop</h3>
-                <p>Converted PSD into practical website</p>
-                <ul class="madeWith">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SASS</li>
-                    <li>Javascript</li>   
-                </ul>
-                <div class="socialLinks">
-                <a href="https://thunderous-dolphin-5a75ec.netlify.app/" target="_blank">LIVE <i class="fa-solid fa-link"></i></a>
-                <a href="https://github.com/Radhika-Lele/RadhikaLeleProjectOne/tree/feature1" target="_blank">GITHUB <i class="fa-brands fa-github"></i></a>
-            </div>
           </div>
-          </div>
-
-          <div class="work">
-            <img class="workThree" src="./assets/Project 3 (1).svg" alt="hanging mirror"  />
+            
+          <div class="secondProject">
+            <img src="./assets/secondProject.jpg" alt="lamp with chairs"/>
             <div class="layer">
                 <h3>NOVAS</h3>
                 <p>Multi page online shopping website for funiture.</p>
@@ -141,20 +138,218 @@
                 <a href="https://peppy-gecko-8d9ad2.netlify.app/"  target="_blank">LIVE <i class="fa-solid fa-link"></i></a>
                 <a href="https://github.com/Radhika-Lele/DhaliwalHuangLeleProjectTwo/tree/displayCartNew" target="_blank">GITHUB <i class="fa-brands fa-github"></i></a>
             </div>
+          </div> 
+       </div>
+    </div> -->
+
+
+       <!-- <div class="workList">
+           <div class="work">
+             <img src="./assets/project1_PSD.svg" alt="table woth desktop" />
+              <img src="./assets/firstProject.jpg" alt="lamp with chairs"/> -->
+             <!-- <div class="layer">
+                <h3>Single Page PSD Conversion</h3>
+                <p>Translated static photoshop design image into functional, responsive website</p>
+                <ul class="madeWith">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <div class="socialLinks">
+                <a href="https://glittering-lily-61b3f1.netlify.app"  target="_blank">LIVE </a>
+                <a href="https://github.com/Radhika-Lele/RadhikaLeleProjectOne"  target="_blank">GITHUB</a>
+                </div>
+             </div>
+           </div>
+
+
+           <div class="work">
+            <img src="./assets/Project 2.svg" alt="couch with lamp" />
+             <img src="./assets/secondProject.jpg" alt="lamp with chairs"/> -->
+            <!-- <div class="layer">
+                <h3>NOVAS Boutique Shop</h3>
+                <p>Multi page online shopping website for funiture</p>
+                <ul class="madeWith">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>Javascript</li>
+                    <li>Firebase</li>  
+                </ul>
+                <div class="socialLinks">
+                <a href="https://peppy-gecko-8d9ad2.netlify.app/" target="_blank">LIVE</a>
+                <a href="https://github.com/Radhika-Lele/DhaliwalHuangLeleProjectTwo/tree/displayCartNew" target="_blank">GITHUB</a>
+            </div>
+          </div>
+          </div> -->
+
+          <!-- <div class="work">
+            <img class="workThree" src="./assets/Project 3 (1).svg" alt="hanging mirror"  />
+            <div class="layer">
+                <h3>Recipe Finder App</h3>
+                <p>The Recipe Search API enables users to explore a vast collection of web recipes. By utilizing the Edamam API, users have the ability to search for recipes using a wide range of criteria, including ingredients and calories intake. This powerful API allows for convenient and customized recipe searches, opening up a world of culinary possibilities for users.</p>
+                <ul class="madeWith">
+                    <li>React</li>
+                    <li>CSS</li>
+                    <li>API</li> 
+                </ul>
+                <div class="socialLinks">
+                <a href="https://cool-tiramisu-c44ed3.netlify.app"  target="_blank">LIVE</a>
+                <a href="https://github.com/Radhika-Lele/RadhikaLeleProject3" target="_blank">GITHUB</a>
+            </div> -->
+          <!-- </div>
+          </div>  
+          <div class="work">
+            <img class="workThree" src="./assets/Project 3 (1).svg" alt="hanging mirror"  />
+            <div class="layer">
+                <h3>NOVAS</h3>
+                <p>Multi page online shopping website for funiture.</p>
+                <ul class="madeWith">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>Javascript</li>   
+                    <li>Firebase</li>
+                </ul>
+                <div class="socialLinks">
+                <a href="https://peppy-gecko-8d9ad2.netlify.app/"  target="_blank">LIVE </a>
+                <a href="https://github.com/Radhika-Lele/DhaliwalHuangLeleProjectTwo/tree/displayCartNew" target="_blank">GITHUB </a>
+            </div>
           </div>
           </div>
-           
+    </div> -->
+<!-- </div>  -->
+<div class="project" data-aos="fade-left">
+    <div class="preview">
+        <a href="https://robo-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/Robo Trivia laptop.png" alt="Robo Trivia quiz app">
+        </a>
+    </div>
+    <div class="projectInfo">
+        <h3><a href="https://robo-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">Robo Trivia</a></h3>
+        <p>Let's start quiz! You can also log in as a guest player by clicking the login button, where you can choose a nickname for yourself. Once logged in, you'll have the option to select from various categories and difficulty levels for the quiz. When you're ready, simply start the quiz and enjoy! You can also keep track of your scores on the scoreboard. Have fun and enjoy your quiz experience!</p>
+        <ul class="toolkit">
+            <li>React</li>
+            <li>CSS3</li>
+            <li>REST API's</li>
+            <li>Responsive</li>
+        </ul>
+
+        <div class="view">
+            <p class="link"><a href="https://github.com/RoboTriviaProject/RoboTrivia" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p class="link"><a href="https://robo-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></p>
+        </div>
     </div>
 </div>
+
+<div class="project reverse"  data-aos="fade-right">
+    <div class="preview">
+        <a href="https://recipe-find-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/Recipe Finder laptop.png" alt="Recipe Finder App">
+        </a>
+    </div>
+    <div class="projectInfo">
+        <h3>
+            <a href="https://recipe-find-app.netlify.app/" target="_blank" rel="noopener noreferrer">Recipe Finder</a>
+        </h3>
+        <p>Do you want to try new recipes? Let's search anything you want to cook. Powered by the Edamam API, this advanced tool empowers users to conduct precise recipe searches based on specific criteria. With its comprehensive functionality, the API grants users a highly customizable and efficient means of discovering culinary inspiration and meeting their recipe needs.
+        </p>
+        <ul class="toolkit">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>CSS3</li>
+            <li>REST API's</li>
+            <li>Responsive</li>
+        </ul>
+
+        <div class="view">
+            <p class="link"><a href="https://github.com/Radhika-Lele/RadhikaLeleProject3" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p class="link"><a href="https://recipe-find-app.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></p>
+        </div>
+    </div>
 </div>
 
+<div class="project" data-aos="fade-left">
+    <div class="preview">
+        <a href="https://novas-boutique-shop.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/Novas Boutique Shop laptop.png" alt="Online Firniture shopping website">
+        </a>
+    </div>
+    <div class="projectInfo">
+        <h3><a href="https://novas-boutique-shop.netlify.app/" target="_blank" rel="noopener noreferrer">
+                NOVAS Boutique Shop</a></h3>
+        <p>Novas Boutique Shop is a specialized furniture store that offers a wide range of furniture options. Customers have the convenience of adding various furniture items to their shopping cart and able to create wishlist as well, allowing for easy and efficient online purchasing.</p>
+        <ul class="toolkit">
+            <li>HTML</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>SASS</li>
+            <li>Firebase</li>
+            <li>Responsive</li>
+        </ul>
+
+        <div class="view">
+            <p class="link"><a href="https://github.com/Radhika-Lele/DhaliwalHuangLeleProjectTwo/tree/displayCartNew" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p class="link"><a href="https://novas-boutique-shop.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="project reverse" data-aos="fade-right">
+    <div class="preview">
+        <a href="https://multi-page-psd.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/PSD laptop.png" alt="Multi page PSD Conversion">
+        </a>
+    </div>
+    <div class="projectInfo">
+        <h3>
+            <a href="https://multi-page-psd.netlify.app/" target="_blank" rel="noopener noreferrer">Furniture Shop</a>
+        </h3>
+        <p>A pixel perfect multi-page PSD conversion, featuring a Home, Blog and Contact Page. It features fully responsive layout, and adheres to best standards including image alt text and semantic HTML elements.
+        </p>
+        <ul class="toolkit">
+            <li>HTML</li>
+            <li>SASS</li>
+            <li>CSS3</li>
+            <li>Responsive</li>
+            <li>Git and Github</li>
+        </ul>
+
+        <div class="view">
+            <p class="link"><a href="https://github.com/Radhika-Lele/RadhikaLeleProjectOne" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p class="link"><a href="https://multi-page-psd.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></p>
+        </div>
+    </div>
+</div>
+
+<br/>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- CONTACT ME -->
+<div class="wrapperTwo">
 <div id="contact">
     <div class="container">
         <h2>CONTACT ME</h2>
         <div class="rowOne">
             <div class="contactLeft">
-              <p>Would like to hear more over coffee? You can reach me on social media or email!<br /></p> 
+              <p>I ❤️ meeting new people. You can reach me on social media or email!<br /></p> 
                 <p><i class="fa-regular fa-paper-plane"></i>Straight shot to my inbox: radhika.khaparde@gmail.com</p>
              
              <div class="socialIcons">
@@ -168,8 +363,8 @@
                 <form action="https://formspree.io/f/moqzrzkl"  method="POST">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="buttonOne">Get In Touch</button>
+                    <textarea name="message" rows="2" placeholder="Your Message"></textarea>
+                    <button type="submit" class="buttonOne">Connect !</button>
                 </form>
             </div>
         </div>
@@ -177,10 +372,23 @@
     <p class="returnTop"><a href="#home">↑ Return to top</a></p>
 
      <div class="copyRight">
-        <p>Developed and designed by Radhika Lele 2023</p>  
+        <p class="copy">Developed and designed by Radhika Lele 2023</p>  
      </div>
 </div>
+</div>
+
+
 <script src="./styles/scripts/scripts.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000
+  });
+</script>
+
+
 </body>
 
 </html>

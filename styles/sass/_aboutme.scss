@@ -7,6 +7,9 @@
     padding-top: 70px;
 }
 
+.aboutMeSection{
+background: #e6f3ff;
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -29,25 +32,25 @@
 
     p{
         font-size: 1.5rem;
+        font-family: "Alegreya Sans", sans-serif;
+        color:#0D3050;
     }
-}
-
-.aboutColTwo h2{
-    color:black;
 }
 
 .subTitle{
     font-size: 50px;
     font-weight: 500;
     font-weight: bold;
-    font-family: 'Overpass', sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
     margin-bottom: 10%;
+    color:#0D3050;
 }
 
 .button{
     display:block;
-    background: #B3D3E0;
-    color:#262626;
+    font-family: "Alegreya Sans", sans-serif;
+    background:  #0D3050;
+    color:white;
     margin: 13% auto 10% auto;
     padding: 14px 50px;
     width: fit-content;
@@ -56,8 +59,8 @@
     transition:  0.5s;
 }
 .button:hover{
-    background: #0D3050 ;
-    color: white;
+    background: #7aafe1 ;
+    color: black;
 }
 
 form button{
